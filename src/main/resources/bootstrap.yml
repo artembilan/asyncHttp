@@ -1,0 +1,10 @@
+spring.rabbitmq:
+  host: localhost
+  username: guest
+  password: guest
+
+spring.cloud.stream.bindings.issueQueu:
+  content-type: application/json
+  group: issueConsumer
+  requiredGroups: issueConsumer
+  consumer.maxAttempts: 1
